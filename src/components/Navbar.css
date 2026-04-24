@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #050E15;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #4e6efd;
+    border-radius: 36px;
+    color: white;
+    border: 0px solid;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.contact :hover {
+    background-color: rgb(76, 98, 197);
+    cursor: pointer;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.7);
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+
+.links a:hover {
+    color: #4ea5fd;
+    transition: color 0.3s ease;
+}
+
+
+.space,
+.contact {
+    width: 200px
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    /* Pushes the button to the right */
+
+}

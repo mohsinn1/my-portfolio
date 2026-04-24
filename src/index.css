@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset default browser margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*global theme */
+body {
+  background-color: #041020;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Modern SaaS Background Glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(78, 165, 253, 0.04), transparent 35%),
+    radial-gradient(circle at 100% 0%, rgba(110, 136, 255, 0.04), transparent 35%),
+    radial-gradient(circle at 50% 100%, rgba(78, 165, 253, 0.03), transparent 40%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 100px;
+}

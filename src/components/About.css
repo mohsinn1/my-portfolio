@@ -1,0 +1,13 @@
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.about-content p {
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
