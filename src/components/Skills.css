@@ -1,11 +1,8 @@
 .skills-grid {
     display: grid;
-    /* This creates 3 equal columns */
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-
 }
-
 
 .skills-section {
     max-width: 1500px;
@@ -26,7 +23,6 @@
     border: 1px solid rgb(78, 165, 253, 0.7);
 }
 
-
 .skill-card h3 {
     color: #4ea5fd;
     padding-bottom: 7px;
@@ -46,4 +42,19 @@
     background: linear-gradient(to right, #ffffff, #a3b4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-section {
+        padding: 80px 20px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
 }

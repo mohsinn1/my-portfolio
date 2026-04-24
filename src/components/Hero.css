@@ -38,8 +38,6 @@
     background: linear-gradient(to right, #ffffff, #6e88ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
 }
 
 #hero p {
@@ -47,9 +45,7 @@
     max-width: 800px;
     margin-bottom: 30px;
     color: rgb(255, 255, 255, 0.7);
-
 }
-
 
 .secondary-btn {
     padding: 20px 40px;
@@ -64,4 +60,34 @@
 .secondary-btn:hover {
     box-shadow: 0 0 10px #4ea5fd;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding-top: 100px;
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    
+    #hero h1 {
+        font-size: 2.5rem;
+        padding: 0 20px;
+    }
+    
+    #hero p {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px 40px 0 40px;
+    }
+    
+    .primary-btn, 
+    .secondary-btn {
+        width: 100%;
+    }
 }

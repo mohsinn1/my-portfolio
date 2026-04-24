@@ -5,7 +5,6 @@ function Skills() {
         <h2 className="section-title">My Expertise</h2>
 
         <div className="skills-grid">
-            {/* Card 1 */}
             <div className="skill-card">
                 <h3>Frontend</h3>
                 <p>React, JavaScript, HTML, CSS</p>
@@ -20,12 +19,8 @@ function Skills() {
                 <h3>Databases</h3>
                 <p>MySQL, MongoDB</p>
             </div>
-
-
-
         </div>
     </div>
-
 }
 
 export default Skills;

@@ -2,7 +2,6 @@
     padding-top: 40px;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    /* Adding some margin so it doesn't stick to the bottom of the projects */
     margin-top: 70px;
 }
 
@@ -11,8 +10,6 @@
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
-
-
 
 .social-links {
     display: flex;
@@ -32,9 +29,18 @@
     transition: 0.3s ease;
 }
 
-/* We use !important here just to ensure it overrides the general p tag styles above */
 .copyright {
     font-size: 0.9rem !important;
     color: rgb(255, 255, 255, 0.3) !important;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 50px;
+    }
+    
+    .social-links {
+        gap: 20px;
+    }
 }

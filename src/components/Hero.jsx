@@ -4,7 +4,7 @@ const handleClick = () => {
     const phoneNumber = "923104084298";
     const message = "Hello Mohsin!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank"); // Opens in a new tab
+    window.open(url, "_blank");
 };
 
 function Hero() {
@@ -15,11 +15,7 @@ function Hero() {
             <a href="/Resume.pdf" target="_blank" className="primary-btn">My Resume</a>
             <button onClick={handleClick} className='secondary-btn'>Contact Me</button>
         </div>
-
-
-
     </div>
-
 }
 
 export default Hero;

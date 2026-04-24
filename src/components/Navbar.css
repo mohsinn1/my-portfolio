@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     background-color: #050E15;
+    position: relative;
 }
 
 .contact button {
@@ -21,7 +22,6 @@
     cursor: pointer;
 }
 
-
 .links a {
     text-decoration: none;
     color: rgb(255, 255, 255, 0.7);
@@ -29,21 +29,58 @@
     font-size: 1.2rem;
 }
 
-
 .links a:hover {
     color: #4ea5fd;
     transition: color 0.3s ease;
 }
 
-
 .space,
 .contact {
-    width: 200px
+    width: 200px;
 }
 
 .contact {
     display: flex;
     justify-content: flex-end;
-    /* Pushes the button to the right */
+}
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .space {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #050E15;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 100;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .links.active {
+        display: flex;
+    }
+    
+    .links a {
+        padding: 20px;
+    }
+    
+    .contact {
+        width: auto;
+    }
 }

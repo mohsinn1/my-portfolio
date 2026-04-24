@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* reset default browser margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*global theme */
 body {
   background-color: #041020;
   color: #ffffff;
@@ -16,7 +14,6 @@ body {
   position: relative;
 }
 
-/* Modern SaaS Background Glow */
 body::before {
   content: '';
   position: fixed;
